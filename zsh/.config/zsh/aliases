@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# System
+alias shutdown='sudo shutdown now'
+alias restart='sudo reboot'
+alias sleep='sudo pm-suspend'
+
+# ls
+alias ls='ls --color=auto'
+
+# Directory Stack
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
